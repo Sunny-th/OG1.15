@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insurance Quote Calculator</title>
+    <title>Insurance Quote Calculator (Indonesia) </title>
     <link rel="stylesheet" href="style1.css"> <!-- Link to your stylesheet -->
 </head>
 <body>
     <div id="app">
         <h1>Insurance Quote Calculator</h1>
+
+        <!-- Age Input -->
         <div>
             <label for="age">Age: </label>
             <input type="number" id="age" placeholder="Enter your age">
         </div>
+
+        <!-- Plan Selection -->
         <div>
             <label for="plan">Plan: </label>
             <select id="plan">
@@ -23,6 +27,8 @@
                 <option value="Diamond">Diamond</option>
             </select>
         </div>
+
+        <!-- Area of Cover Selection -->
         <div>
             <label for="areaOfCover">Area of Cover: </label>
             <select id="areaOfCover">
@@ -33,6 +39,8 @@
                 <option value="Africa">Africa</option>
             </select>
         </div>
+
+        <!-- Outpatient Co-pay Selection -->
         <div>
             <label for="outpatientCopay">Outpatient Co-pay: </label>
             <select id="outpatientCopay">
@@ -41,6 +49,8 @@
                 <option value="20% Co-Pay">20% Co-Pay</option>
             </select>
         </div>
+
+        <!-- Inpatient Deductible Selection -->
         <div>
             <label for="inpatientDeductible">Inpatient Deductible: </label>
             <select id="inpatientDeductible">
@@ -52,30 +62,16 @@
                 <option value="$10,000">$10,000</option>
             </select>
         </div>
-        <div>
-            <input type="checkbox" id="dental"> <label for="dental">Dental</label>
-        </div>
-        <div>
-            <input type="checkbox" id="maternity"> <label for="maternity">Maternity</label>
-        </div>
-        <div>
-            <input type="checkbox" id="optical"> <label for="optical">Optical</label>
-        </div>
-        <div>
-            <label for="paymentFrequency">Payment Frequency: </label>
-            <select id="paymentFrequency">
-                <option value="Annual">Annual</option>
-                <option value="Semi-Annual">Semi-Annual</option>
-                <option value="Quarterly">Quarterly</option>
-            </select>
-        </div>
-        <button id="calculate">Calculate Premium</button>
 
-        <!-- Area to display the results -->
-        <h2 id="quote"></h2>
-        <ul id="breakdown"></ul>
-    </div>
+        <!-- Checkbox Options (Dental, Maternity, Optical) -->
+        <div class="checkbox-container">
+            <input type="checkbox" id="dental"> 
+            <label for="dental">Dental</label>
+        </div>
 
-    <script src="main.js"></script> <!-- Ensure this points to your main.js -->
-</body>
-</html>
+        <div class="checkbox-container">
+            <input type="checkbox" id="maternity"> 
+            <label for="maternity">Maternity</label>
+        </div>
+
+        <div class="chec
