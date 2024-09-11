@@ -1,17 +1,84 @@
+/* Body and General Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
+    background-color: white;  /* White background */
+    font-family: Arial, sans-serif;  /* Simple sans-serif font */
+    color: #333;  /* Dark gray text */
+    margin: 0;
+    padding: 0;
+    text-align: center;  /* Center all text and content */
 }
 
+/* Container for the app */
 #app {
-    background-color: #fff;
+    max-width: 500px;  /* Limit content width */
+    margin: 50px auto;  /* Center content horizontally with margin */
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;  /* Light gray container background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+
+/* Headings */
+h1, h2 {
+    color: #09a9fa;  /* Light blue headings */
+    margin-bottom: 20px;
 }
 
 h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+/* Inputs */
+input, select {
+    width: 100%;  /* Full width */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+}
+
+/* Buttons */
+button {
+    background-color: #0073e6;  /* Darker blue button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005bb5;  /* Even darker blue on hover */
+}
+
+/* Quote Display */
+#quote {
+    color: #333;  /* Dark gray text */
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#breakdown {
+    text-align: left;
+    margin-top: 20px;
+    color: #666;  /* Lighter gray for breakdown */
+    font-size: 14px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Optional Fields */
+label {
+    font-size: 16px;
     color: #333;
 }
